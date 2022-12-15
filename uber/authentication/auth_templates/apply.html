@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<main class="container">
+    <div class="row" id = 'apply-background'>
+        <aside class="col-12 col-md-6" id = 'apply-form'>
+            <h2>Uber Clean Employee Application</h2>
+            {% include 'application.html' %}
+        </aside>
+        <aside class = 'col-12 col-md-6'>
+            <img src = '../static/images/man.jpg'  id = 'apply-img'>
+        </aside>
+    </div>
+</main>
+
+{% endblock content %}

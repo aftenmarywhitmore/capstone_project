@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<main class="container">
+    <div class="row" id = 'request-background'>
+        <aside class="col-12 col-md-6" id = 'request-form'>
+            <h2>Cleaning Request Form</h2>
+            {% include 'request-temp.html' %}
+        </aside>
+        <aside class = 'col-12 col-md-6'>
+            <img src = '../static/images/stove.png'  id = 'request-img'>
+        </aside>
+    </div>
+</main>
+</br>
+</br>
+</br>
+{% endblock content %}

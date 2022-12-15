@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!--MEAT AND POTATOEZ-->
+<div class = "container">
+    <header class = "row">
+        <div class = "col-12 col-md-6">
+            <img src = "../static/images/cleaner.jpg" alt = "Cleaner Image" id = "become-cleaner-img">
+            <div id="apply-body">
+                <h2 id = "index-headers">Become a Cleaner</h2>    
+                <h5 id = "index-sub-headers">Fill out an application and jumpstart your career today!</h5>
+                <a href="{{ url_for('auth.apply') }}" class = "btn btn-secondary btn-block">Apply Now</a>
+            </div>
+        </div>
+        <div class = "col-12 col-md-6">
+            <img src = "../static/images/kitchen.jpg" alt = "Clean Kitchen Image" id = "book_clean_img">
+            <div id = "request-body"> 
+                <h2 id = "index-headers">Book a Clean</h2>    
+                <h5 id = "index-sub-headers">Fill out a request form and book a clean in minutes!</h5>
+                <a href="{{ url_for('auth.cust_request') }}" id = 'book-btn' class = "btn btn-secondary btn-block">Request A Clean</a>
+            </div>
+        </div>
+    </header>
+
+<!--FOOTER-->
+    <footer class = "row" id="footer">
+        <div class = "col-2 col-md-2">
+            <a href = 'http://www.facebook.com'>
+                <img src = "../../static/images/facebook-logo.jpg" alt = "Facebook Thumbnail" id = "facebook-logo"/>
+            </a>
+        </div>
+        <div class = "col-2 col-md-2">
+            <a href = 'http://www.instagram.com'>
+                <img src = "../../static/images/instagram-logo.png" alt = "Instagram Thumbnail" id = "instagram-logo"/>
+            </a>
+        </div>
+        <div class = "col-2 col-md-2">
+            <a href = 'http://www.linkedin.com'>
+                <img src = "../../static/images/linkedin-logo.png" alt = "Linkedin Thumbnail" id = "linkedin-logo"/>
+            </a>
+        </div>
+        <div class = "col-2 col-md-2">
+            <a href = 'https://www.twitter.com'>
+                <img src = "../../static/images/twitter-logo.png" alt = "Twitter Thumbnail" id = "twitter-logo"/>
+            </a>
+        </div>
+        <div class = "col-2 col-md-2">
+            <a href = 'https://www.youtube.com/watch?v=ytQ5CYE1VZw'>
+                <img src = "../../static/images/youtube-logo.jpg" alt = "Youtube Thumbnail" id = "youtube-logo"/>
+            </button>
+        </div>
+    </footer>
+</div>
+{% endblock content %}

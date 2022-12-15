@@ -1,0 +1,47 @@
+<!--EMPLOYEE FORM-->
+<form method = "POST">
+    {{ form.hidden_tag() }} 
+    <div class = "become-cleaner-form">
+        <fieldset id="full-name-cleaner-entry">
+        </br>
+            {{ form.full_name(class = "form-control", placeholder = "Full Name")}}
+        </fieldset>
+        <fieldset id = "user-name-entry">
+        </br>
+            {{ form.user_name(class = "form-control", placeholder = "Enter User Name")}}
+        </fieldset>
+        <fieldset id = "email-cleaner-entry">
+        </br>
+            {{ form.email(class = "form-control", placeholder = "Enter Email")}}
+        </fieldset>
+        <fieldset id="phone-num-cleaner-entry">
+        </br> 
+            {{ form.phone_num(class = "form-control", placeholder = "Enter Phone Number")}}
+        </fieldset>
+        <fieldset id="address-cleaner-entry">
+        </br>
+            {{ form.address(class = "form-control", placeholder = "Enter Address")}}
+        </fieldset>
+        <fieldset id="birthday-cleaner-entry">
+        </br>
+            {{ form.birthday(class = "form-control", placeholder = "Enter Birthday (00/00/0000)")}}
+        </fieldset>
+        <fieldset id="ref-name-entry">
+        </br>
+            {{ form.ref_name(class = "form-control", placeholder = "Enter Reference Name(s)")}}
+        </fieldset>
+        <fieldset id="ref-phone-cleaner-entry">
+        </br>
+            {{ form.ref_phone(class = "form-control", placeholder = "Enter Reference Phone Number(s)")}}
+        </fieldset>
+        <fieldset id="ref-email-cleaner-entry">
+        </br>
+            {{ form.ref_email(class = "form-control", placeholder = "Enter Reference Email(s)")}}
+        </fieldset>
+        <fieldset id="today-date-cleaner-entry">
+        </br>
+            {{ form.today_date(class = "form-control", placeholder = "Enter Today Date")}}
+        </fieldset>
+        {{ form.submit_button(class = "btn btn-secondary btn-block")}}
+    </div>
+</form>

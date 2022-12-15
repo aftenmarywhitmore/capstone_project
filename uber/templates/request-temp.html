@@ -1,0 +1,39 @@
+<!--BOOK A CLEAN FORM-->
+<form method = "POST">
+    {{ form.hidden_tag() }} 
+    <div class = "book-clean-form">
+        <fieldset id = "full-name-entry">
+        </br>
+            {{ form.full_name(class = "form-control", placeholder = "Your Full Name")}}
+        </fieldset>
+        <fieldset id="email-entry">
+        </br>
+            {{ form.email(class = "form-control", placeholder = "Email Address")}}
+        </fieldset>
+        <fieldset id="phone-entry">
+        </br>
+            {{ form.phone_num(class = "form-control", placeholder = "Phone Number")}}
+        </fieldset>
+        <fieldset id="beds-entry">
+        </br>
+            {{ form.num_beds(class = "form-control", placeholder = "Number of Bedrooms")}}
+        </fieldset>
+        <fieldset id="baths-entry">
+        </br>
+            {{ form.num_bath(class = "form-control", placeholder = "Number of Bathrooms")}}
+        </fieldset>
+        <fieldset id="sqft-entry">
+        </br>
+            {{ form.sqft(class = "form-control", placeholder = "Estimated Square Footage of Residence")}}
+        </fieldset>
+        <fieldset id="date-entry">
+        </br>
+            {{ form.req_date(class = "form-control", placeholder = "Date Requested For Cleaning")}}
+        </fieldset>
+        <fieldset id="time-entry">
+        </br>
+            {{ form.req_time(class = "form-control", placeholder = "Time Requested For Cleaning")}}
+        </fieldset>
+        {{ form.submit_button(class = "btn btn-secondary btn-block")}}
+    </div>
+</form>
